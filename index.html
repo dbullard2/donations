@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>ReStore Donations</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
+    />
+    <link rel="stylesheet" href="css/mystyles.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar is-link"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="index.html">
+          ReStore Donations
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="faq.html"> FAQ </a>
+          <a onclick="openModal()" class="navbar-item"> Donate </a>
+        </div>
+        <div class="navbar-end">
+          <div class="wrap navbar-item is-hidden-mobile">
+            <i class="fa fa-search" style="color: #000"></i>
+            <input
+              class="input"
+              id="searchBar"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <input
+            type="text"
+            class="input is-hidden-tablet mobile-search"
+            placeholder=""
+          />
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-medium is-link">
+      <div class="hero-body one">
+        <div>
+          <!--<img src="img/habitat-for-humanity-logo.jpg" alt="">-->
+          <p class="title">McKinney Restore Donations</p>
+          <p class="subtitle">
+            If you're wondering whether we'll accept your donation or
+            not, this is the site for you.
+          </p>
+          <div class="is-flex">
+            <a
+              class="button"
+              href="faq.html"
+              style="margin-right: 2vw"
+              >FAQ</a
+            >
+            <a
+              class="button"
+              onclick="openModal()"
+              target="_blank"
+              style="margin-right: 2vw"
+              >Donate</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container two">
+        <p
+          class="tagg"
+          onclick="filterSelection('0'); activate(this)"
+        >
+          Appliances
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('1'); activate(this)"
+        >
+          Building Materials
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('2'); activate(this)"
+        >
+          Cabinets
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('3'); activate(this)"
+        >
+          Doors and Windows
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('4'); activate(this)"
+        >
+          Electrical / Lighting
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('5'); activate(this)"
+        >
+          Flooring
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('6'); activate(this)"
+        >
+          Furniture / Home Decor
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('7'); activate(this)"
+        >
+          Hardware
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('8'); activate(this)"
+        >
+          Lumber
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('9'); activate(this)"
+        >
+          Outdoor Living
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('z'); activate(this)"
+        >
+          Paint Materials
+        </p>
+        <p
+          class="tagg"
+          onclick="filterSelection('y'); activate(this)"
+        >
+          Plumbing
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container three">
+        <br />
+        <div class="appliances 0 canHide">
+          <p class="is-size-3 has-text-weight-bold">Appliances</p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/garbage_disposal.jpg" />
+              </figure>
+              <p class="item-name">Garbage Disposal</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/fridge.jpg" />
+              </figure>
+              <p class="item-name">
+                Refrigerator
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >fridge</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/mini_fridge.jpg" />
+              </figure>
+              <p class="item-name">Mini Fridge</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/freezer.jpg" />
+              </figure>
+              <p class="item-name">Freezer</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/double_oven.jpg" />
+              </figure>
+              <p class="item-name">Double Oven</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/oven.jpg" />
+              </figure>
+              <p class="item-name">Oven</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/microwave.jpg" />
+              </figure>
+              <p class="item-name">Microwave</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/electric_cooktop.jpg" />
+              </figure>
+              <p class="item-name">Electric Cooktop</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/gas_cooktop.jpg" />
+              </figure>
+              <p class="item-name">Gas Cooktop</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dishwasher.jpg" />
+              </figure>
+              <p class="item-name">Dishwasher</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/washer.jpg" />
+              </figure>
+              <p class="item-name">Washer</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dryer.jpg" />
+              </figure>
+              <p class="item-name">Gas or Electric Dryer</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/toaster_oven.jpg" />
+              </figure>
+              <p class="item-name">Toaster Oven</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/toaster.jpg" />
+              </figure>
+              <p class="item-name">Toaster</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/vacuum.jpg" />
+              </figure>
+              <p class="item-name">Vacuum Cleaner</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/coffee_maker.jpeg" />
+              </figure>
+              <p class="item-name">Coffee Maker</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wine_cooler.jpg" />
+              </figure>
+              <p class="item-name">Wine Cooler</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/slow_cooker.jpg" />
+              </figure>
+              <p class="item-name">
+                Slow Cooker
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >crockpot</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/range_hood.jpg" />
+              </figure>
+              <p class="item-name">Range Hood</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/air_conditioner.jpg" />
+              </figure>
+              <p class="item-name">
+                Air Conditioner
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >ac</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/stove.jpg" />
+              </figure>
+              <p class="item-name">Stove</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/heater.jpg" />
+              </figure>
+              <p class="item-name">Heater</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/generator.jpg" />
+              </figure>
+              <p class="item-name">Generator</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/ice_cream_maker.jpg" />
+              </figure>
+              <p class="item-name">Ice Cream Maker</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/humidifier.jpg" />
+              </figure>
+              <p class="item-name">Humidifier</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/slab_coil.jpg" />
+              </figure>
+              <p class="item-name">Slab Coil</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/air_handler.jpg" />
+              </figure>
+              <p class="item-name">Air Handler</p>
+            </div>
+          </div>
+        </div>
+        <div class="building-materials canHide 1">
+          <p class="is-size-3 has-text-weight-bold">
+            Building Materials
+          </p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hardie_board.jpg" />
+              </figure>
+              <p class="item-name">Hardie Board</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/attic_stairs.jpg" />
+              </figure>
+              <p class="item-name">Attic Stairs</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/granite.jpg" />
+              </figure>
+              <p class="item-name">Granite</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/roofing_tiles.jpg" />
+              </figure>
+              <p class="item-name">Clay Roofing Tiles</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/countertop.jpg" />
+              </figure>
+              <p class="item-name">Countertop</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hard_hat.jpg" />
+              </figure>
+              <p class="item-name">Hard Hat</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wallpaper.jpg" />
+              </figure>
+              <p class="item-name">Wallpaper</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/roof_turbine.jpg" />
+              </figure>
+              <p class="item-name">Roof Turbine</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/concrete_mixer.jpg" />
+              </figure>
+              <p class="item-name">Concrete Mixer</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/insulation.jpg" />
+              </figure>
+              <p class="item-name">Insulation</p>
+            </div>
+          </div>
+        </div>
+        <div class="cabinets canHide 2">
+          <p class="is-size-3 has-text-weight-bold">Cabinets</p>
+          <p class="has-text-weight-bold">
+            Cabinets must be in sellable condition with no nails or
+            screws sticking out
+          </p>
+          <br />
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/cabinets.jpg" />
+              </figure>
+              <p class="item-name">Cabinets</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/cabinet_hardware.jpg" />
+              </figure>
+              <p class="item-name">Cabinet Hardware</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/cabinet_door.jpg" />
+              </figure>
+              <p class="item-name">Cabinet Door</p>
+            </div>
+          </div>
+        </div>
+        <div class="doors-windows canHide 3">
+          <p class="is-size-3 has-text-weight-bold">
+            Doors & Windows
+          </p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/interior_door.jpg" />
+              </figure>
+              <p class="item-name">Interior Door</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/exterior_door.jpg" />
+              </figure>
+              <p class="item-name">Exterior Door</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/window.jpg" />
+              </figure>
+              <p class="item-name">Window</p>
+            </div>
+          </div>
+        </div>
+        <div class="electrical-lighting canHide 4">
+          <p class="is-size-3 has-text-weight-bold">
+            Electrical / Lighting
+          </p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/led_light_bulb.jpg" />
+              </figure>
+              <p class="item-name">LED Light Bulb</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/halogen_bulb.jpg" />
+              </figure>
+              <p class="item-name">Halogen Bulb</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/light_bulb.jpg" />
+              </figure>
+              <p class="item-name">Light Bulb</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/circuit_box.jpg" />
+              </figure>
+              <p class="item-name">
+                Circuit Box
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >electrical panel</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wall-light.jpg" />
+              </figure>
+              <p class="item-name">Wall Light</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/spot_light.jpg" />
+              </figure>
+              <p class="item-name">Spot Light</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/ceiling_fan.jpg" />
+              </figure>
+              <p class="item-name">Ceiling Fan</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/exit_sign.jpg" />
+              </figure>
+              <p class="item-name">Exit Sign</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/surge_protector.jpg" />
+              </figure>
+              <p class="item-name">Surge Protector</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/light_bar.jpg" />
+              </figure>
+              <p class="item-name">Light Bar</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/fluorescent_bulb.jpg" />
+              </figure>
+              <p class="item-name">Fluorescent Bulb</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/strip_light.jpg" />
+              </figure>
+              <p class="item-name">Strip Light</p>
+            </div>
+          </div>
+        </div>
+        <div class="flooring canHide 5">
+          <p class="is-size-3 has-text-weight-bold">Flooring</p>
+          <p class="has-text-weight-bold">
+            All flooring donations must be at least six boxes
+          </p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tile.jpg" />
+              </figure>
+              <p class="item-name">Tile</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/engineered_hardwood.jpg" />
+              </figure>
+              <p class="item-name">Engineered Hardwood</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/vinyl_flooring.jpg" />
+              </figure>
+              <p class="item-name">Vinyl Flooring</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/laminate_flooring.jpg" />
+              </figure>
+              <p class="item-name">Laminate Flooring</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/cove_base.jpg" />
+              </figure>
+              <p class="item-name">Cove Base</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/grout.jpg" />
+              </figure>
+              <p class="item-name">Grout</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/floor_stripper.jpg" />
+              </figure>
+              <p class="item-name">Floor Stripper</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/underlayment.jpg" />
+              </figure>
+              <p class="item-name">Underlayment</p>
+            </div>
+          </div>
+        </div>
+        <div class="funiture canHide 6">
+          <p class="is-size-3 has-text-weight-bold">
+            Furniture / Home <br class="is-hidden-tablet" />Decor
+          </p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dry_erase_board.jpg" />
+              </figure>
+              <p class="item-name">Dry Erase Board</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/futon.jpg" />
+              </figure>
+              <p class="item-name">Futon</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/curtain_hook.jpg" />
+              </figure>
+              <p class="item-name">Curtain Hook</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/chalk_board.jpg" />
+              </figure>
+              <p class="item-name">Chalkboard</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/shoe_rack.jpg" />
+              </figure>
+              <p class="item-name">Shoe Rack</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/chalk_board.jpg" />
+              </figure>
+              <p class="item-name">Chalkboard</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/jukebox.jpg" />
+              </figure>
+              <p class="item-name">Jukebox</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/daybed.jpg" />
+              </figure>
+              <p class="item-name">Daybed</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/napkin_ring.jpg" />
+              </figure>
+              <p class="item-name">Napkin Ring</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/curtains.jpg" />
+              </figure>
+              <p class="item-name">Curtains</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/headboard.jpg" />
+              </figure>
+              <p class="item-name">Headboard</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/painting.jpg" />
+              </figure>
+              <p class="item-name">Painting / Picture</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/rug.jpg" />
+              </figure>
+              <p class="item-name">Rug</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/throw.jpg" />
+              </figure>
+              <p class="item-name">Throw Pillow</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/suitcase.jpg" />
+              </figure>
+              <p class="item-name">Suitcase</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/curtain_rod_bracket.jpg" />
+              </figure>
+              <p class="item-name">Curtain Rod Brackets</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/coffee_table.jpg" />
+              </figure>
+              <p class="item-name">Coffee Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/china.jpg" />
+              </figure>
+              <p class="item-name">China</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bed_frame.jpg" />
+              </figure>
+              <p class="item-name">Bed Frame</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/sectional.jpg" />
+              </figure>
+              <p class="item-name">Sectional</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bean_bag_chair.jpg" />
+              </figure>
+              <p class="item-name">Bean Bag Chair</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/loft_bed.jpg" />
+              </figure>
+              <p class="item-name">Loft Bed</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/table.jpg" />
+              </figure>
+              <p class="item-name">Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/medallion.jpg" />
+              </figure>
+              <p class="item-name">Medallion</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/side_table.jpg" />
+              </figure>
+              <p class="item-name">Side Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/recliner.jpg" />
+              </figure>
+              <p class="item-name">Recliner</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/exercise.jpg" />
+              </figure>
+              <p class="item-name">Exercise Equipment</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/arch_window_shade.jpg" />
+              </figure>
+              <p class="item-name">Arch Window Shade</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/plastic_container.jpg" />
+              </figure>
+              <p class="item-name">
+                Plastic Container
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >tote</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/candle_holder.jpg" />
+              </figure>
+              <p class="item-name">Candle Holder</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dog_bowl.jpg" />
+              </figure>
+              <p class="item-name">Dog Bowl</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/picture_frame.jpg" />
+              </figure>
+              <p class="item-name">Picture Frame</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/filing_cabinet.jpg" />
+              </figure>
+              <p class="item-name">
+                Filing Cabinet
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >file</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/couch.jpg" />
+              </figure>
+              <p class="item-name">
+                Couch
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >sofa loveseat</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bed_rail.png" />
+              </figure>
+              <p class="item-name">Bed Rail</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dining_chair.jpg" />
+              </figure>
+              <p class="item-name">Dining Chair</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/desk.jpg" />
+              </figure>
+              <p class="item-name">Desk</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/chest.jpg" />
+              </figure>
+              <p class="item-name">Chest</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wardrobe_rack.jpg" />
+              </figure>
+              <p class="item-name">Wardrobe Rack</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dresser.jpg" />
+              </figure>
+              <p class="item-name">Dresser</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/poker_table.jpg" />
+              </figure>
+              <p class="item-name">Poker Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/elfa_shelving.jpg" />
+              </figure>
+              <p class="item-name">Elfa Shelving</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/ottoman.jpg" />
+              </figure>
+              <p class="item-name">Ottoman</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tea_set.jpg" />
+              </figure>
+              <p class="item-name">Tea Set</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/end_table.jpg" />
+              </figure>
+              <p class="item-name">End Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/office_chair.jpg" />
+              </figure>
+              <p class="item-name">Office Chair</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/nightstand.jpg" />
+              </figure>
+              <p class="item-name">Nightstand</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/safe.jpg" />
+              </figure>
+              <p class="item-name">Safe</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/Rocking+Chairs.jpg" />
+              </figure>
+              <p class="item-name">Rocking Chair</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/halloween.jpg" />
+              </figure>
+              <p class="item-name">Halloween Decorations</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/christmas.jpg" />
+              </figure>
+              <p class="item-name">
+                Christmas Decorations
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >garland wreath tree ornament</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/newel.jpg" />
+              </figure>
+              <p class="item-name">Stair Newel</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/settee.jpg" />
+              </figure>
+              <p class="item-name">Settee</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/mirror.jpg" />
+              </figure>
+              <p class="item-name">Mirror (must be framed)</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/jewelry_box.jpg" />
+              </figure>
+              <p class="item-name">Jewelry Box</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/laundry_basket.jpg" />
+              </figure>
+              <p class="item-name">
+                Laundry Basket
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >hamper</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/welcome_mat.jpg" />
+              </figure>
+              <p class="item-name">Welcome Mat</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/folding_chair.jpg" />
+              </figure>
+              <p class="item-name">Folding Chair</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/sewing_machine.jpg" />
+              </figure>
+              <p class="item-name">Sewing Machine</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/electric_fireplace.jpg" />
+              </figure>
+              <p class="item-name">Electric Fireplace</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bakers_rack.jpg" />
+              </figure>
+              <p class="item-name">Baker's Rack</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/podium.jpg" />
+              </figure>
+              <p class="item-name">Podium</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/curtain_rod.jpg" />
+              </figure>
+              <p class="item-name">Curtain Rod</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/fake_plants.jpg" />
+              </figure>
+              <p class="item-name">
+                Fake Plants
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >faux artificial silk</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/foosball_table.jpg" />
+              </figure>
+              <p class="item-name">Foosball Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/curio_cabinet.jpg" />
+              </figure>
+              <p class="item-name">Curio Cabinet</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bar_stool.jpg" />
+              </figure>
+              <p class="item-name">Bar Stool</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/china_cabinet.jpg" />
+              </figure>
+              <p class="item-name">China Cabinet</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/clock.jpg" />
+              </figure>
+              <p class="item-name">Clock</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/shower_caddy.jpg" />
+              </figure>
+              <p class="item-name">Shower Caddy</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/candle.jpg" />
+              </figure>
+              <p class="item-name">Candle</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/gun_case.jpg" />
+              </figure>
+              <p class="item-name">Gun Case</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wine_rack.jpg" />
+              </figure>
+              <p class="item-name">Wine Rack</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/chaise.jpg" />
+              </figure>
+              <p class="item-name">Chaise</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dishes.jpg" />
+              </figure>
+              <p class="item-name">Dishes</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/table_leg.jpg" />
+              </figure>
+              <p class="item-name">Table Leg</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/radio.jpg" />
+              </figure>
+              <p class="item-name">Radio</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/vase.jpg" />
+              </figure>
+              <p class="item-name">Vase</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/mantle.jpg" />
+              </figure>
+              <p class="item-name">Mantle</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/pot_rack.jpg" />
+              </figure>
+              <p class="item-name">Pot Rack</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/book_ends.jpg" />
+              </figure>
+              <p class="item-name">Book Ends</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/armoire.jpg" />
+              </figure>
+              <p class="item-name">Armoire</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/jewelry_cabinet.jpg" />
+              </figure>
+              <p class="item-name">Jewelry Cabinet</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dart_board.jpg" />
+              </figure>
+              <p class="item-name">Dart Board</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bulletin_board.jpg" />
+              </figure>
+              <p class="item-name">Bulletin Board</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/coat_rack.jpg" />
+              </figure>
+              <p class="item-name">Coat Rack</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bunk_bed.jpg" />
+              </figure>
+              <p class="item-name">Bunk Bed</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tv_stand.jpg" />
+              </figure>
+              <p class="item-name">TV Stand</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/entry_table.jpg" />
+              </figure>
+              <p class="item-name">Entry Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/ironing_board.jpg" />
+              </figure>
+              <p class="item-name">Ironing Board</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/lamp_shade.jpg" />
+              </figure>
+              <p class="item-name">Lamp Shade</p>
+            </div>
+          </div>
+        </div>
+        <div class="hardware canHide 7">
+          <p class="is-size-3 has-text-weight-bold">Hardware</p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wheelchair.jpg" />
+              </figure>
+              <p class="item-name">Wheelchair</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/air_pump.jpg" />
+              </figure>
+              <p class="item-name">Air Pump</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/soldering_gun.jpg" />
+              </figure>
+              <p class="item-name">Soldering Gun</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/workbench.jpg" />
+              </figure>
+              <p class="item-name">Workbench</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hand_saw.jpg" />
+              </figure>
+              <p class="item-name">Hand Saw</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/band_saw.jpg" />
+              </figure>
+              <p class="item-name">Band Saw</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/weatherstrip.jpg" />
+              </figure>
+              <p class="item-name">Weatherstrip</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/closet_rod.jpg" />
+              </figure>
+              <p class="item-name">Closet Rod</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bungee_cord.jpg" />
+              </figure>
+              <p class="item-name">Bungee Cord</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tile_sealer.jpg" />
+              </figure>
+              <p class="item-name">Tile Sealer</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/gloves.jpg" />
+              </figure>
+              <p class="item-name">Gloves</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/putty_knife.jpg" />
+              </figure>
+              <p class="item-name">Putty Knife</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/sandpaper.jpg" />
+              </figure>
+              <p class="item-name">Sandpaper</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/scissors.jpg" />
+              </figure>
+              <p class="item-name">Scissors</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/Allen_keys.jpg" />
+              </figure>
+              <p class="item-name">Allen Key</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/socket_set.jpg" />
+              </figure>
+              <p class="item-name">Socket Set</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/screwdriver.jpg" />
+              </figure>
+              <p class="item-name">Screwdriver</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/pliers.jpg" />
+              </figure>
+              <p class="item-name">Pliers</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wire_stripper.jpg" />
+              </figure>
+              <p class="item-name">Wire Stripper</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hose_clamp.jpg" />
+              </figure>
+              <p class="item-name">Hose Clamp</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/funnel.jpg" />
+              </figure>
+              <p class="item-name">Funnel</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wrench.jpg" />
+              </figure>
+              <p class="item-name">
+                Wrench
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >combination socket pipe</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/level.jpg" />
+              </figure>
+              <p class="item-name">Level</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/rubber_mallet.jpg" />
+              </figure>
+              <p class="item-name">Rubber Mallet</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/pry_bar.jpg" />
+              </figure>
+              <p class="item-name">Pry Bar</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/nail_puller.jpg" />
+              </figure>
+              <p class="item-name">Nail Puller</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wrecking_bar.jpg" />
+              </figure>
+              <p class="item-name">Wrecking Bar</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/padlock.jpg" />
+              </figure>
+              <p class="item-name">Padlock</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/trash_can.jpg" />
+              </figure>
+              <p class="item-name">
+                Trash Can
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >garbage can garbage bin</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/cable_lock.jpg" />
+              </figure>
+              <p class="item-name">Cable Lock</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/file.jpg" />
+              </figure>
+              <p class="item-name">File</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/drill_bit.jpg" />
+              </figure>
+              <p class="item-name">Drill Bit</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wood_chisel.jpg" />
+              </figure>
+              <p class="item-name">Wood Chisel</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wire.jpg" />
+              </figure>
+              <p class="item-name">Wire</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tape.jpg" />
+              </figure>
+              <p class="item-name">Tape</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/roof_vent.jpg" />
+              </figure>
+              <p class="item-name">Roof Vent</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/garage_rails.jpg" />
+              </figure>
+              <p class="item-name">Garage Door Rails</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dummy_lever.jpg" />
+              </figure>
+              <p class="item-name">Dummy Lever</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/air_vent.jpg" />
+              </figure>
+              <p class="item-name">Air Vent</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/metal_pail.jpg" />
+              </figure>
+              <p class="item-name">
+                Metal Pail
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >steel pail</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tire.jpg" />
+              </figure>
+              <p class="item-name">Tire</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hacksaw_blade.jpg" />
+              </figure>
+              <p class="item-name">Hacksaw Blade</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tablesaw.jpg" />
+              </figure>
+              <p class="item-name">Table Saw</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/door_handle.jpg" />
+              </figure>
+              <p class="item-name">Door Handle</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/door_knob.jpg" />
+              </figure>
+              <p class="item-name">Door Knob</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/foam_spray.jpg" />
+              </figure>
+              <p class="item-name">Foam Spray</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tool_box.jpg" />
+              </figure>
+              <p class="item-name">
+                Tool Box
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >toolbox</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hammer.jpg" />
+              </figure>
+              <p class="item-name">Hammer</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tire_gauge.jpg" />
+              </figure>
+              <p class="item-name">Tire Gauge</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/screws.jpg" />
+              </figure>
+              <p class="item-name">
+                Misc Nuts, Bolts, Screws<span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >nails</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/door_kick_plate.jpg" />
+              </figure>
+              <p class="item-name">Door Kick Plate</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/step_ladder.jpg" />
+              </figure>
+              <p class="item-name">Step Ladder</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tool_bag.jpg" />
+              </figure>
+              <p class="item-name">Tool Bag</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/ladder.jpg" />
+              </figure>
+              <p class="item-name">Ladder</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/alpha_shelving.jpg" />
+              </figure>
+              <p class="item-name">Alpha Shelving</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/carpet_glue.jpg" />
+              </figure>
+              <p class="item-name">Carpet Glue</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/glue_trap.jpg" />
+              </figure>
+              <p class="item-name">Glue Trap</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hole_saw.jpg" />
+              </figure>
+              <p class="item-name">Hole Saw</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hand_truck.jpg" />
+              </figure>
+              <p class="item-name">
+                Hand Truck
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >dolly dollie</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/glue_gun.jpg" />
+              </figure>
+              <p class="item-name">Glue Gun</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/spring_clamps.jpg" />
+              </figure>
+              <p class="item-name">Spring Clamps</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/safety_glasses.jpg" />
+              </figure>
+              <p class="item-name">
+                Safety Glasses
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >goggles</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lumber canHide 8">
+          <p class="is-size-3 has-text-weight-bold">Lumber</p>
+          <p class="has-text-weight-bold">
+            All lumber must be at least four feet long and in sellable
+            condition
+          </p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/trim.jpg" />
+              </figure>
+              <p class="item-name">Trim</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/lumber.jpg" />
+              </figure>
+              <p class="item-name">Misc Lumber</p>
+            </div>
+          </div>
+        </div>
+        <div class="outdoor-living canHide 9">
+          <p class="is-size-3 has-text-weight-bold">Outdoor Living</p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/wood_chipper.jpg" />
+              </figure>
+              <p class="item-name">Wood Chipper</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/safety_harness.jpg" />
+              </figure>
+              <p class="item-name">Safety Harness</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/snow_blower.jpg" />
+              </figure>
+              <p class="item-name">Snow Blower</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/backpack.jpg" />
+              </figure>
+              <p class="item-name">Backpack</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tabletop_heater.jpg" />
+              </figure>
+              <p class="item-name">
+                Tabletop Heater
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >propane</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bike_lock.jpg" />
+              </figure>
+              <p class="item-name">Bike Lock</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/cooler.jpg" />
+              </figure>
+              <p class="item-name">Cooler</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/golf_club.jpg" />
+              </figure>
+              <p class="item-name">Golf Club</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bowling_ball.jpg" />
+              </figure>
+              <p class="item-name">Bowling Ball</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/umbrella.jpg" />
+              </figure>
+              <p class="item-name">Umbrella</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hose.jpg" />
+              </figure>
+              <p class="item-name">Hose</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/landscape_fabric.jpg" />
+              </figure>
+              <p class="item-name">Landscape Fabric</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/flower_pot.jpg" />
+              </figure>
+              <p class="item-name">Flower Pot</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/dog_house.jpg" />
+              </figure>
+              <p class="item-name">Dog House</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tarp.jpg" />
+              </figure>
+              <p class="item-name">Tarp</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/patio_pillow.jpg" />
+              </figure>
+              <p class="item-name">Patio Pillow</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tow_ball.jpg" />
+              </figure>
+              <p class="item-name">Tow Ball & Hitch</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/pool_filter.jpg" />
+              </figure>
+              <p class="item-name">Pool Filter</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bike.jpg" />
+              </figure>
+              <p class="item-name">
+                Bike
+                <span
+                  style="position: absolute; color: rgba(0, 0, 0, 0)"
+                  >bicycle</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/brick.jpg" />
+              </figure>
+              <p class="item-name">Brick</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/patio_table.jpg" />
+              </figure>
+              <p class="item-name">Patio Table</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/lawnmower.jpg" />
+              </figure>
+              <p class="item-name">Lawnmower</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/mailbox.jpg" />
+              </figure>
+              <p class="item-name">Mailbox</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/live_animal_trap.jpg" />
+              </figure>
+              <p class="item-name">Live Animal Trap</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/shovel.jpg" />
+              </figure>
+              <p class="item-name">Shovel</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/handicap_walker.jpg" />
+              </figure>
+              <p class="item-name">Handicap Walker</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/chainsaw.jpg" />
+              </figure>
+              <p class="item-name">Chainsaw</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/patio_chair.jpg" />
+              </figure>
+              <p class="item-name">Patio Chair</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/rake.jpg" />
+              </figure>
+              <p class="item-name">Rake</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/weed_eater.jpg" />
+              </figure>
+              <p class="item-name">Weed Eater</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/paracord.jpg" />
+              </figure>
+              <p class="item-name">Paracord</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/garden_decorations.jpg" />
+              </figure>
+              <p class="item-name">Lawn Decorations</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/rope.jpg" />
+              </figure>
+              <p class="item-name">Rope</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/sprinkler.jpg" />
+              </figure>
+              <p class="item-name">Sprinkler</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hose_nozzle.jpg" />
+              </figure>
+              <p class="item-name">Hose Nozzle</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/engine_hoist.jpg" />
+              </figure>
+              <p class="item-name">Engine Hoist</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/hose_reel.jpg" />
+              </figure>
+              <p class="item-name">Hose Reel</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/grill.jpg" />
+              </figure>
+              <p class="item-name">Grill</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/smoker.jpg" />
+              </figure>
+              <p class="item-name">Smoker</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/leaf_blower.jpg" />
+              </figure>
+              <p class="item-name">Leaf Blower</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/doggy_door.jpg" />
+              </figure>
+              <p class="item-name">Doggy Door</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/tent.jpg" />
+              </figure>
+              <p class="item-name">Tent</p>
+            </div>
+          </div>
+        </div>
+        <div class="paint-materials canHide z">
+          <p class="is-size-3 has-text-weight-bold">
+            Paint Materials
+          </p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/roller_cover.jpg" />
+              </figure>
+              <p class="item-name">Roller Cover</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bucket_grid.jpg" />
+              </figure>
+              <p class="item-name">Bucket Grid</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/paint_brush.jpg" />
+              </figure>
+              <p class="item-name">Paint Brush</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/drop_cloth.jpg" />
+              </figure>
+              <p class="item-name">Drop Cloth</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/paint_edger.jpg" />
+              </figure>
+              <p class="item-name">Paint Edger</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/roller_frame.jpg" />
+              </figure>
+              <p class="item-name">Roller Frame</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/gravity_fed_spray_gun.jpg" />
+              </figure>
+              <p class="item-name">
+                Spray Gun
+                <span
+                  style="color: rgba(0, 0, 0, 0); position: absolute"
+                  >Gravity Fed</span
+                >
+              </p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/spray_paint.jpg" />
+              </figure>
+              <p class="item-name">Spray Paint</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/paint_tray.jpg" />
+              </figure>
+              <p class="item-name">Paint Tray</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/caulk_gun.jpg" />
+              </figure>
+              <p class="item-name">Caulk Gun</p>
+            </div>
+          </div>
+        </div>
+        <div class="plumbing canHide y">
+          <p class="is-size-3 has-text-weight-bold">Plumbing</p>
+          <div class="item-list">
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/sink_strainer.jpg" />
+              </figure>
+              <p class="item-name">Sink / Tub Strainer</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/vanity_sink.jpg" />
+              </figure>
+              <p class="item-name">Vanity Sink</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/shower_door.jpg" />
+              </figure>
+              <p class="item-name">Shower Door</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/bathtub.jpg" />
+              </figure>
+              <p class="item-name">Bathtub</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/toilet_paper_dispenser.jpg" />
+              </figure>
+              <p class="item-name">Toilet Paper Dispenser</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/soap_dispenser.jpg" />
+              </figure>
+              <p class="item-name">Soap Dispenser</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/utility_sink.jpg" />
+              </figure>
+              <p class="item-name">Utility Sink</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/stainless_sink.jpg" />
+              </figure>
+              <p class="item-name">Stainless Steel Sink</p>
+            </div>
+            <div class="item">
+              <figure class="image is-square">
+                <img src="img/sewage_pump.jpg" />
+              </figure>
+              <p class="item-name">Sewage Pump</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="plug">
+      <p class="is-size-5">Designed & Developed by&nbsp;</p>
+      <a
+        href="https://www.creanost.com/"
+        target="_blank"
+        class="is-size-5"
+        ><span style="color: #87f2ff">crea </span
+        ><span style="color: #ff87db">nost</span></a
+      >
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p class="has-text-weight-bold has-text-centered">
+          3 Ways To Donate
+        </p>
+        <span class="close"></span>
+        <section>
+          <div class="container modal-stuffs">
+            <ol>
+              <li>
+                <span
+                  >Drop off your donation at the store. We accept
+                  donations Tuesday through Satrday from 9:00AM to
+                  5:30PM</span
+                >
+              </li>
+              <li>
+                <span
+                  >Schedule a donation pickup online. You can schedule
+                  a donation pickup online
+                  <a
+                    href="https://resupplyme.com/charity/218/donation-pickup/step-one"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >here</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span>
+                  Call or text our donation coordinator Ien at
+                  214-598-0090
+                </span>
+              </li>
+            </ol>
+            <br /><br />
+            <p class="has-text-weight-bold">
+              All donation must be in sellable conditions. No rips,
+              tears stains, etc. All appliances must be in working
+              order. For further questions, please call us at
+              972-548-9112
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

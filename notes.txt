@@ -1,0 +1,3 @@
+todo - crop images, compress images, add image to hero, search
+       function,
+faq - donatin hours, ian phone #,
